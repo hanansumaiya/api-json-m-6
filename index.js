@@ -60,27 +60,49 @@
 // console.log(smallNumbers);
 // //////////////////////////////////////////////////////////////////////
 
-// class Support {
-//   name;
-//   designation;
-//   address;
-//   phone;
-//   constructor(name, designation, address, phn) {
-//     this.name = name;
-//     this.designation = designation;
-//     this.address = address;
-//     this.phone = phn;
-//   }
-//   startSession() {
-//     console.log("Start session");
-//   }
-// }
-// const sumaiya = new Support("Sumaiya", "web developer", "uttara", "0123456789");
-// const arif = new Support(
-//   "Arifuzzamana",
-//   "Web developer",
-//   "uttara",
-//   "0123456987"
-// );
-// console.log(sumaiya);
-// console.log(arif);
+class Support {
+  name;
+  designation;
+  address;
+  phone;
+  constructor(name, designation, address, phn) {
+    this.name = name;
+    this.designation = designation;
+    this.address = address;
+    this.phone = phn;
+  }
+  startSession() {
+    console.log("Start session");
+  }
+}
+const sumaiya = new Support("Sumaiya", "web developer", "uttara", "0123456789");
+const arif = new Support(
+  "Arifuzzamana",
+  "Web developer",
+  "uttara",
+  "0123456987"
+);
+console.log(sumaiya);
+console.log(arif);
+/////////////////////////////////////////////////
+//////////////  SPREAD OPERATOR
+const numbers = [1, 22, 2, 3, 5, 6, 9, 8, 75, 41, 21, 45, 25, 36, 52];
+console.log(...numbers);
+///////////////////////////////////////////
+const [one, two, three, four] = numbers;
+console.log(two, four);
+////////////////////////////////////////////
+class People {
+  id;
+  name;
+  profession;
+  address;
+  constructor(id, name, profession, address) {
+    this.id = id;
+    this.name = name;
+    this.profession = profession;
+    this.address = address;
+  }
+}
+const people1 = new People(4125, "arif", "web developer", "uttara");
+console.log(people1);
